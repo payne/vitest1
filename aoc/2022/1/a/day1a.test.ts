@@ -1,8 +1,14 @@
 // sum.test.ts
 import { expect, test } from 'vitest'
-import { read } from './day1a'
+import { read, groupCount } from './day1a'
 
-test('adds 1 + 2 to equal 3', () => {
+test('can read the file', () => {
   let contents = read();
   expect(contents.length).toBe(55)
 })
+
+test('can count the groups', () => {
+  let groups = groupCount();
+  expect(groups.length).toBe(5)
+})
+
