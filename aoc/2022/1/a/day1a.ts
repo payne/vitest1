@@ -1,7 +1,9 @@
 var fs = require('fs');
 
 export function read() {
-  let contents = fs.readFileSync("aoc/2022/1/a/example1.data",'utf8');
+  let fileName = 'example1.data'
+  // fileName = 'test.data' // using this gives the right answer
+  let contents = fs.readFileSync(`aoc/2022/1/a/${fileName}`,'utf8');
   // console.log(contents);
   return contents;
 }
