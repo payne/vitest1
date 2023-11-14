@@ -1,6 +1,6 @@
 // sum.test.ts
 import { expect, test } from 'vitest'
-import { read, groupCount, calorieArray } from './day1a'
+import { read, groupCount, calorieArray, maxCalories } from './day1a'
 
 test('can read the file', () => {
   let contents = read();
@@ -15,5 +15,9 @@ test('can count the groups', () => {
 test('calorieArray works with example data', () => {
   let ca = calorieArray()
   expect(ca).toStrictEqual([6000, 4000, 11000, 24000, 10000])
+})
+
+test('maxCalories test with sample data', () => {
+ expect(maxCalories()).toBe(24000)
 })
 

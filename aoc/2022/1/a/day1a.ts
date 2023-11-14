@@ -24,3 +24,9 @@ export function calorieArray() {
   return ca;
 }
 
+export function maxCalories() {
+  let ca = calorieArray()
+  return Math.max(...ca)
+}
+
+
