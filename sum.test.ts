@@ -1,4 +1,4 @@
-// sum.test.js
+// sum.test.ts
 import { expect, test } from 'vitest'
 import { sum } from './sum'
 
